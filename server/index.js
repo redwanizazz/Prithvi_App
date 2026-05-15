@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const cron = require('node-cron');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const QRCode = require('qrcode');
 const pool = require('./db/connection');
 const authMiddleware = require('./middleware/auth');
@@ -285,4 +285,4 @@ cron.schedule('0 2 * * *', async () => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
+
