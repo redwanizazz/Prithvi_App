@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../api';
 
 const SEASONS = ['pre-monsoon', 'monsoon', 'post-monsoon', 'dry-winter'];
 const ACTIONS = ['water', 'weed', 'fertilise', 'germination', 'harvest'];
@@ -129,4 +129,4 @@ export default function Schedules() {
     </div>
   );
 }
-
+

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../api';
 import SeasonBadge from '../components/SeasonBadge';
 import CareEventIcon from '../components/CareEventIcon';
 
@@ -127,4 +127,4 @@ export default function Plant() {
     </div>
   );
 }
-
+

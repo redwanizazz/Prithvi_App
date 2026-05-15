@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../api';
 
 export default function Species() {
   const [species, setSpecies] = useState([]);
@@ -102,4 +102,4 @@ export default function Species() {
     </div>
   );
 }
-
+

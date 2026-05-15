@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../api';
 
 export default function Education() {
   const [articles, setArticles] = useState([]);
@@ -56,4 +56,4 @@ export default function Education() {
     </div>
   );
 }
-
+

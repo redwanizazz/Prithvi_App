@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../api';
 
 export default function Batches() {
   const [batches, setBatches] = useState([]);
@@ -111,4 +111,4 @@ export default function Batches() {
     </div>
   );
 }
-
+

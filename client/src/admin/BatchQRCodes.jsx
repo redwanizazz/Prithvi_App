@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../api';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 
@@ -100,4 +100,4 @@ export default function BatchQRCodes() {
     </div>
   );
 }
-
+
